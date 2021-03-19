@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+html {
+  height: 100%;
+  color: white;
+}
+
+section {
+  flex: 1;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hero.jpg");
+
+  /* Set a specific height */
+  height: 1080px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-collapse: collapse;
+  color: white;
+  margin: 20px 0 20px 0;
+}
+
+.calendar-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  border-collapse: collapse;
+  height: 40px;
+}
+
+.calendar-container:first-child {
+  border-bottom: 1px solid white;
+}
+
+.calendar {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.person {
+  display: flex;
+}
+
+.revers {
+  flex-direction: row-reverse;
+}
+
+.width-1 {
+  flex: 1;
+}
+
+.bio {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: 5;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 5px auto;
+}
+
+p {
+  font-size: 40px;
+}
+
+.green {
+  background-color: #2b643b;
+}
+
+.yellow {
+  background-color: #7f6a18;
+}
+
+.red {
+  background-color: #6b2f2f;
+}
